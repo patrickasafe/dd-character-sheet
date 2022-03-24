@@ -3,15 +3,15 @@ import { useQuery } from 'react-query';
 import { axiosInstance } from '../../../axiosInstance';
 import { queryKeys } from '../../../react-query/constants';
 
-const treatAlignments = (alignments) => {
+async function getAlignments() {
+  const { data } = await axiosInstance.get('alignments/');
+  return data
+  
 }
 
-async function getAlignments() {
-  const res = await axiosInstance.get('alignments/');
-  
-  const data = res.results
-  return data;
-}
+
+
+
 // add the interface of payload
 interface UseAlignments {
   count: number;
@@ -20,10 +20,15 @@ interface UseAlignments {
 
 export function useAlignments() {
   // for filtering staff by treatment
-
+  const treatData = (data) => {
+    const treatedData = data.results
+    return treatedData
+  }
 
   const fallback = [];
-  const { data: alignments = fallback } = useQuery(queryKeys.alignments, getAlignments);
+  const { data = fallback } = useQuery(queryKeys.alignments, getAlignments);
+
+  const alignments = treatData(data)
 
   return { alignments };
 }
