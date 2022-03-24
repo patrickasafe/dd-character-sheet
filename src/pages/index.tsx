@@ -1,14 +1,12 @@
 import { Box } from "@mui/material";
 import { useQueryClient } from "react-query";
-import  { Alignments }  from "../src/components/Alignments";
 
-import { DefaultTextField } from "../src/components/DefaultTextField";
-
+import { Alignments } from "../components/Alignments";
+import { DefaultTextField } from "../components/DefaultTextField";
 
 const Home = () => {
-
   const queryClient = useQueryClient();
-  
+
   const title = `D&D CHARACTER SHEET`;
 
   const player = {
@@ -25,7 +23,7 @@ const Home = () => {
   };
 
   return (
-    <Box sx={{ display: "flex", alignContent: "center", }}>
+    <Box sx={{ display: "flex", alignContent: "center" }}>
       <Box sx={{ flexDirection: "column", display: "flex", padding: "10px" }}>
         <div>{title}</div>
         <DefaultTextField

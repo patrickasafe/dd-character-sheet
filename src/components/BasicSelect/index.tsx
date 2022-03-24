@@ -4,8 +4,9 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
+import { Alignment } from '../../types/types';
 
-export default function BasicSelect({...props}) {
+export default function BasicSelect({options}:{options:any}, {placeholder}:{placeholder:string}) {
   const [value, setValue] = React.useState('');
 
   const handleChange = (event: SelectChangeEvent) => {
@@ -15,13 +16,13 @@ export default function BasicSelect({...props}) {
   return (
     <Box sx={{ maxWidth: 200 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">{props.placeholder}</InputLabel>
+        <InputLabel id="demo-simple-select-label">{placeholder}</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           value={value}
           onChange={handleChange}
         >
-          {props.options?.map( option => {
+          {options?.map( (option: Alignment) => {
            return <MenuItem value={option.name} key={option.index}>{option.name}</MenuItem>
           })}
 

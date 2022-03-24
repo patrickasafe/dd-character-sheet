@@ -1,34 +1,36 @@
-import { useQuery } from 'react-query';
+import { useQuery } from "react-query";
 
-import { axiosInstance } from '../../../axiosInstance';
-import { queryKeys } from '../../../react-query/constants';
+import { axiosInstance } from "../../../axiosInstance";
+import { queryKeys } from "../../../react-query/constants";
+import { Alignment } from "../../../types/types";
 
-async function getAlignments() {
-  const { data } = await axiosInstance.get('alignments/');
-  return data
-  
+async function getAlignments(): Promise<UseAlignments> {
+  const { data } = await axiosInstance.get("alignments/");
+  return data;
 }
-
-
-
 
 // add the interface of payload
 interface UseAlignments {
   count: number;
-  results: [];
+  results: Alignment[];
+} 
+
+interface useAlignmentsPayload {
+  alignments: Alignment[]
 }
 
-export function useAlignments() {
+export function useAlignments(): useAlignmentsPayload {
   // for filtering staff by treatment
-  const treatData = (data) => {
-    const treatedData = data.results
-    return treatedData
-  }
+  const treatData = (data: UseAlignments): Alignment[] => {
+    const treatedData = data.results;
 
-  const fallback = [];
+    return treatedData;
+  };
+
+  const fallback: [] = [];
   const { data = fallback } = useQuery(queryKeys.alignments, getAlignments);
 
-  const alignments = treatData(data)
+  const alignments = treatData(data);
 
   return { alignments };
 }
