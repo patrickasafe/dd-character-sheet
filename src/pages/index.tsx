@@ -1,7 +1,8 @@
 import { Box } from "@mui/material";
 import { useQueryClient } from "react-query";
 
-import { Alignments } from "../components/Alignments";
+import { AlignmentsSelect } from "../components/AlignmentSelect";
+import { ClassSelect } from "../components/ClassSelect";
 import { DefaultTextField } from "../components/DefaultTextField";
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
   };
 
   return (
+    
     <Box sx={{ display: "flex", alignContent: "center" }}>
       <Box sx={{ flexDirection: "column", display: "flex", padding: "10px" }}>
         <div>{title}</div>
@@ -32,12 +34,12 @@ const Home = () => {
         />
       </Box>
       <Box>
-        <DefaultTextField value={player.character.class} helperText="CLASS" />
+        <ClassSelect />
         <DefaultTextField
           value={player.character.background}
           helperText="BACKGROUND"
         />
-        <Alignments />
+        <AlignmentsSelect />
       </Box>
     </Box>
   );
