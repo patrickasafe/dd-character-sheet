@@ -4,5 +4,5 @@ import { useAlignments } from "./hooks/useAlignments";
 export const AlignmentsSelect = () => {
   const { alignments } = useAlignments();
 
-  return <BasicSelect options={alignments} placeholder={`Alignments`} />;
+  return <BasicSelect options={alignments} placeholder={`ALIGNMENTS`} />;
 };

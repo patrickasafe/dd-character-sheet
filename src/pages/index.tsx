@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import { useQueryClient } from "react-query";
 
 import { AlignmentsSelect } from "../components/AlignmentSelect";
+import { BackgroundSelect } from "../components/BackgroundSelect";
 import { ClassSelect } from "../components/ClassSelect";
 import { DefaultTextField } from "../components/DefaultTextField";
 import { RaceSelect } from "../components/RaceSelect";
@@ -40,11 +41,8 @@ const Home = () => {
       <Box>
         <RaceSelect />
         <ClassSelect />
+        <BackgroundSelect />
         {/* <SubClassSelect /> */}
-        <DefaultTextField
-          value={player.character.background}
-          helperText="BACKGROUND"
-        />
         <AlignmentsSelect />
       </Box>
     </Box>

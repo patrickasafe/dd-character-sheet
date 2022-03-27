@@ -13,10 +13,10 @@ async function getAlignments(): Promise<UseAlignments> {
 interface UseAlignments {
   count: number;
   results: Alignment[];
-} 
+}
 
 interface useAlignmentsPayload {
-  alignments: Alignment[]
+  alignments: Alignment[];
 }
 
 export function useAlignments(): useAlignmentsPayload {

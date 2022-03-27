@@ -1,8 +1,8 @@
 export const queryKeys = {
-  class: 'class',
-  background: 'background',
-  alignment: 'alignment',
-  races: 'races',
-  alignments: 'alignments',
-  subclass:'subclass',
+  classes: "classes",
+  backgrounds: "backgrounds",
+  alignments: "alignments",
+  races: "races",
+  alignments: "alignments",
+  subclass: "subclass",
 };

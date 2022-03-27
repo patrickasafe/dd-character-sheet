@@ -2,9 +2,9 @@ import { useQuery } from "react-query";
 
 import { axiosInstance } from "../../../axiosInstance";
 import { queryKeys } from "../../../react-query/constants";
-import { Class } from "../../../types/types";
+import { Background } from "../../../types/types";
 
-async function getClass(): Promise<UseClasses> {
+async function getBackgrounds(): Promise<UseClasses> {
   const { data } = await axiosInstance.get("classes/");
   return data;
 }
@@ -28,7 +28,7 @@ export function useClasses(): useClassesPayload {
   };
 
   const fallback: [] = [];
-  const { data = fallback } = useQuery(queryKeys.classes, getClass);
+  const { data = fallback } = useQuery(queryKeys.class, getClass);
 
   const classes = treatData(data);
 
