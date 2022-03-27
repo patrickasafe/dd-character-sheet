@@ -6,7 +6,12 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { Alignment } from '../../types/types';
 
-export default function BasicSelect({options}:{options:any}, {placeholder}:{placeholder:any}) {
+interface BasicSelectProps {
+  options: any,
+  placeholder: string,
+}
+
+export default function BasicSelect({options, placeholder}: BasicSelectProps) {
   const [value, setValue] = React.useState('');
 
   const handleChange = (event: SelectChangeEvent) => {
