@@ -1,5 +1,5 @@
 
-# Welcome to my RPG Sheet made on React:
+# Welcome to my RPG Sheet made on React
 
 This is my personal project aiming to improve my react skill and help RPGs fans using a unique, interactive, responsive and configurable RPG character sheet. For now, I'm doing this project using D&D5E, maybe someday other systems.
 
@@ -81,8 +81,15 @@ This is my personal project aiming to improve my react skill and help RPGs fans 
 > * Criminal contact:
 >   * Someone else
 
-7. Choose the equipment.
-8. Write down the player name.
+7. Use default equipment or roll dices for gold and buy at the store.
+
+>Ex.: Rolled for gold.
+> * Shortsword x 2
+> * Dagger x 2
+> * Leather armor
+> * Burglar's pack
+> * Thieves Tools
+
 9. Select an alignment.
 
 # Features to add
