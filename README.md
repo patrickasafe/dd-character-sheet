@@ -1,51 +1,92 @@
 
-Ideas to my RPG Sheet made on React:
+# Welcome to my RPG Sheet made on React:
 
-User path:
+This is my personal project aiming to improve my react skill and help RPGs fans using a unique, interactive, responsive and configurable RPG character sheet. For now, I'm doing this project using D&D5E, maybe someday other systems.
 
-1 - Open the App
-2 - Type character name. Ex.: "Linus Torvalds"
-3 - Select a race (Future feature: description onHover) on a simple select dropdown - > this should add or remove stats, features and traits from the sheet. 
+# USER PATH:
 
-Ex.: Elf (Drow):  Stats ->     +2 dex
-                               +1 cha 30ft speed
-                  Skills ->    Perception
-                  Features ->  Darkvision 60 ft
-                               Fey Ancestry
-                               Sunlight sensitivity
-                               Drow Magic
-                  Spells ->    Dancing Lights
-                  Weapons ->   Rapiers, shortswords, hand crossbows
-                  Languages -> Common, Elven
+1. Open the App
 
-4 - Select a class (Future feature: description onHover) - > this should add or remove stats, features and traits from the sheet.
+2. Type character name. 
+>Ex.: "Sava Jcript"
 
-Ex.: Rogue:     Hit Dice ->   1d8
-                HP ->         8 + Constitution modifier
-                Armors ->     Light armor
-                Weapons ->    Simple weapons, longswords
-                Tools ->      Thieve tool
-                Saving Throw -> Dexterity and Intelligence
-                Skills -> Acrobatics, Persuasion, Stealth, Insight
-                Expertise -> Acrobatics and Stealth
-                Features -> Sneak Attack 1d6
-                Languages -> Thieves Can't
-                Proficiency bonus -> +2
+3. Select a race.
 
-5 - Roll abilities score (this is )
+>Ex.: Elf (Drow):
+>
+> * Stats:
+>   * +2 Dexterity
+>   * +1 Charisma
+>   * 30ft speed
+> * Skills:
+>   * Perception
+> * Features:
+>   * Darkvision: 60 ft
+>   * Fey Ancestry
+>   * Sunlight sensitivity
+>   * Drow Magic
+> * Spells:
+>   * Dancing Lights
+> * Weapons mastery:
+>   * Rapiers
+>   * Short swords
+>   * hand crossbows
+> * Languages:
+>   * Common
+>   * Elven
 
-EX.: 11, 9, 10, 15, 10, 14
+4. Select a class.
 
+>Ex.: Rogue:
+> * Hit Dice: 1d8
+> * HP: 8 + Constitution modifier
+> * Armors mastery:
+>   * Light armor
+> * Weapons mastery:
+>   * Simple weapons
+>   * Longswords
+> * Tools mastery:
+>   * Thieve tools
+> * Saving Throw:
+>   * Dexterity
+>   * Intelligence
+> * Skills:
+>   * Acrobatics
+>   * Persuasion
+>   * Stealth
+>   * Insight
+> * Expertise:
+>   * Acrobatics
+>   * Stealth
+> * Features:
+>   * Sneak Attack 1d6
+> * Languages:
+>   * Thieves Can't
+> * Proficiency bonus: +2
 
-                
+5. Roll and distribute abilities score.
 
+>Ex.: 11, 9, 10, 15, 10, 14
 
-5 - Select a background - > this should add or remove stats, features and traits from the sheet ????
-6 - Write down the player name.
-7 - Select an alignment.
+6. Write down the characters personality traits:
 
-* I think it's important to place all the stats on the same page. Maybe after, we can export an this data to a compact UI.
-* Import: classes, abilities, equipments and everything else from API D&D5 using a dropdown menu or textfield with autocomplete.
+7. Select a background.
+
+>Ex.: Criminal
+> * Skills:
+>   * Deception
+>   * Survival (took that one because I already have "Stealth")
+> * Tools mastery:
+>   * Dice.
+> * Criminal contact:
+>   * Someone else
+
+7. Choose the equipment.
+8. Write down the player name.
+9. Select an alignment.
+
+# Features to add
+
+* Automatic fill the sheet with modifiers, skills etc. when selecting a race, class etc.
 * Custom Colors, Images, and themes for roles
 * Night-mode
-* 
