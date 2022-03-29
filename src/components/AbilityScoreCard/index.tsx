@@ -13,8 +13,11 @@ export const AbilityScoreCard = ({
     //This component will use map calling the instance of player context Ability Scores.
     //Ex.: {} = usecontext
     //  player.character.abilitiesScores.map()
-    <Card>
-      <CardHeader title={children} ></CardHeader>
+    <Card sx={{ textAlign: "center" }}>
+      <CardHeader
+        titleTypographyProps={{ fontSize: "12px", textAlign: "center" }}
+        title={children}
+      ></CardHeader>
       {number}
     </Card>
   );
