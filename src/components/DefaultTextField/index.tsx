@@ -1,11 +1,18 @@
 import { TextField } from "@mui/material";
 
-export const DefaultTextField = ({ ...props }) => {
+interface DefaultTextFieldProps {
+  helperText: string,
+  value: string,
+  sx?: any
+}
+
+export const DefaultTextField = ({helperText, value, sx }: DefaultTextFieldProps) => {
   return (
     <TextField
       variant="standard"
-      helperText={props.helperText}
-      value={props.value}
+      helperText={helperText}
+      value={value}
+      sx={sx}
     />
   );
 };

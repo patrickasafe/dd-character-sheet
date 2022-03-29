@@ -19,7 +19,7 @@ export default function BasicSelect({options, placeholder}: BasicSelectProps) {
   };
 
   return (
-    <Box sx={{ maxWidth: 200 }}>
+    <Box sx={{minWidth: 120, maxWidth: 240 }}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">{placeholder}</InputLabel>
         <Select

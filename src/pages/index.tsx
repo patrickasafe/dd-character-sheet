@@ -6,6 +6,7 @@ import { BackgroundSelect } from "../components/BackgroundSelect";
 import { ClassSelect } from "../components/ClassSelect";
 import { DefaultTextField } from "../components/DefaultTextField";
 import { RaceSelect } from "../components/RaceSelect";
+import { Body } from "../components/Body";
 // import { SubClassSelect } from "../components/SubclassSelect";
 
 const Home = () => {
@@ -27,25 +28,52 @@ const Home = () => {
   };
 
   return (
-    //Header
-    <Box sx={{ display: "flex", alignContent: "center" }}>
-      {/* LEFT SIDE */}
-      <Box sx={{ flexDirection: "column", display: "flex", padding: "10px" }}>
-        <div>{title}</div>
-        <DefaultTextField
-          value={player.character.name}
-          helperText={"CHARACTER NAME"}
-        />
+    <>
+      {/* Header */}
+      <Box sx={{ display: "flex", alignContent: "center" }}>
+        {/* LEFT SIDE */}
+        <Box sx={{ flexDirection: "column", display: "flex", padding: "10px" }}>
+          <div>{title}</div>
+          <DefaultTextField
+            value={player.character.name}
+            helperText={"CHARACTER NAME"}
+          />
+        </Box>
+        {/* RIGHT SIDE */}
+        <Box sx={{ flexDirection: "column", display: "flex", padding: "10px" }}>
+          {/* RIGHT SIDE: UPPER SIDE */}
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-around",
+              alignContent: "center",
+            }}
+          >
+            <ClassSelect />
+            <BackgroundSelect />
+            <DefaultTextField
+              value={player.name}
+              helperText={"PLAYER NAME"}
+              sx={{ maxWidth: 100 }}
+            />
+          </Box>
+          {/* RIGHT SIDE: LOWER SIDE */}
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-around",
+              alignContent: "center",
+            }}
+          >
+            <RaceSelect />
+            <AlignmentsSelect />
+
+            {/* <SubClassSelect /> */}
+          </Box>
+        </Box>
       </Box>
-      {/* RIGHT SIDE */}
-      <Box>
-        <RaceSelect />
-        <ClassSelect />
-        <BackgroundSelect />
-        {/* <SubClassSelect /> */}
-        <AlignmentsSelect />
-      </Box>
-    </Box>
+      <Body />
+    </>
   );
 };
 
