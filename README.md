@@ -3,6 +3,30 @@
 
 This is my personal project aiming to improve my react skill and help RPGs fans using a unique, interactive, responsive and configurable RPG character sheet. For now, I'm doing this project using D&D5E, maybe someday other systems.
 
+
+# URGENT THINGS TO DO:
+
+* Create a generic component that will represent "Inspiration", "Proficiency Bonus", "Passive Wisdom". This component will contain a textfield or numbercounter sided by a title description.
+
+* Create a generic component for "Skill" and "Saving Throws", something like: Icon + counter + description.
+
+* Create a component for "Other Proficiencies", "Languages" and "Features & Traits". I can imagine something like a textfield that adds new itens to the character object, they act like todo cards.
+
+* Create a component with 3 items representing "Armor Class", "Initiative" and "Speed".
+
+* Create a generic component for "Current Hit Points" and "Temporary Hit Points".
+
+* Create a component for "Attacks & Spellcasting".
+
+* Create a component for "Equipment". This component will contain counters for money, also something like "Other Proficiencies" system of todo like add/remove items with autocomplete.
+
+* Create a generic component for "Personality Traits", "Ideals", "Bonds" and "Flaws"
+
+# IMPORTANT THINGS TO DO:
+
+* Redo header, aligning and fixing width formatting issues
+
+
 # USER PATH:
 
 1. Open the App
@@ -93,6 +117,7 @@ This is my personal project aiming to improve my react skill and help RPGs fans 
 9. Select an alignment.
 
 # Features to add
+
 
 * Automatic fill the sheet with modifiers, skills etc. when selecting a race, class etc.
 * Custom Colors, Images, and themes for roles
