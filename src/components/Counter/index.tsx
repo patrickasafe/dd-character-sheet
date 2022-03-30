@@ -1,7 +1,7 @@
 import { TextField } from "@mui/material";
 
 interface CounterProps {
-  label: string,
+  label?: string,
 }
 
 export const Counter = ({ label }: CounterProps) => {

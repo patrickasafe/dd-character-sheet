@@ -1,11 +1,11 @@
 import { Box } from "@mui/material";
 import { useQueryClient } from "react-query";
 
-import { AlignmentsSelect } from "../components/AlignmentSelect";
-import { BackgroundSelect } from "../components/BackgroundSelect";
-import { ClassSelect } from "../components/ClassSelect";
+import { AlignmentsSelect } from "../components/Selects/AlignmentSelect";
+import { BackgroundSelect } from "../components/Selects/BackgroundSelect";
+import { ClassSelect } from "../components/Selects/ClassSelect";
 import { DefaultTextField } from "../components/DefaultTextField";
-import { RaceSelect } from "../components/RaceSelect";
+import { RaceSelect } from "../components/Selects/RaceSelect";
 import { Body } from "../components/Body";
 // import { SubClassSelect } from "../components/SubclassSelect";
 

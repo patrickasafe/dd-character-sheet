@@ -18,6 +18,7 @@ export const AbilityScoreCard = ({
         titleTypographyProps={{ fontSize: "12px", textAlign: "center" }}
         title={children}
       ></CardHeader>
+      {/* This number below will be replaced */}
       {number}
     </Card>
   );
