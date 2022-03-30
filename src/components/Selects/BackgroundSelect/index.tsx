@@ -1,5 +1,4 @@
 import BasicSelect from "../BaseSelect";
-import { useClasses } from "./hooks/useBackgrounds";
 
 const backgrounds = [
   { index: "acolyte", name: "Acolyte" },

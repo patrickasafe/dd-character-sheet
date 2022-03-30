@@ -53,7 +53,7 @@ const Home = () => {
             <BackgroundSelect />
             <DefaultTextField
               value={player.name}
-              helperText={"PLAYER NAME"}
+              helperText="PLAYER NAME"
               sx={{ maxWidth: 100 }}
             />
           </Box>

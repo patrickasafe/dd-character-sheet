@@ -29,7 +29,7 @@ This is my personal project aiming to improve my react skill and help RPGs fans 
 * Redo header, aligning and fixing width formatting issues
 * Rename extension JS to TS, due to this project use typescript
 * **[✓]** Use map method on static "Ability Score component"
-* Use Props from Material UI to extend props needed when making new components from Material UI components. 
+* **[✓]** Use Props from Material UI to extend props needed when making new components from Material UI components. 
 
 >Ex.: 
 
