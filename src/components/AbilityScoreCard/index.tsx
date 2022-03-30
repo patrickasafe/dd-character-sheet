@@ -15,11 +15,12 @@ export const AbilityScoreCard = ({
     //  player.character.abilitiesScores.map()
     <Card sx={{ textAlign: "center" }}>
       <CardHeader
-        titleTypographyProps={{ fontSize: "12px", textAlign: "center" }}
-        title={children}
-      ></CardHeader>
+        titleTypographyProps={{ fontSize: "8px", textAlign: "center" }}
+        title={`${children}
+        ${number}`}
+      >{number}</CardHeader>
       {/* This number below will be replaced */}
-      {number}
+      
     </Card>
   );
 };

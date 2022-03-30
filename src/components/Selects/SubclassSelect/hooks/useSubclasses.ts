@@ -28,7 +28,7 @@ export function useSubclasses(): useSubclassesPayload {
   };
 
   const fallback: [] = [];
-  const { data = fallback } = useQuery(queryKeys.class, getSubclass);
+  const { data = fallback } = useQuery(queryKeys.classes, getSubclass);
 
   const subclasses = treatData(data);
 

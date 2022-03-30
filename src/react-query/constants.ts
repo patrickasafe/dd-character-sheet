@@ -3,6 +3,5 @@ export const queryKeys = {
   backgrounds: "backgrounds",
   alignments: "alignments",
   races: "races",
-  alignments: "alignments",
   subclass: "subclass",
 };
