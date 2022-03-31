@@ -1,4 +1,5 @@
-import { Card, CardHeader } from "@mui/material";
+import { Card, Box, CardContent, Typography } from "@mui/material";
+import { Counter } from "../Counter";
 
 interface AbilityScoreCardProps {
   children: string;
@@ -13,14 +14,27 @@ export const AbilityScoreCard = ({
     //This component will use map calling the instance of player context Ability Scores.
     //Ex.: {} = usecontext
     //  player.character.abilitiesScores.map()
-    <Card sx={{ textAlign: "center" }}>
-      <CardHeader
-        titleTypographyProps={{ fontSize: "8px", textAlign: "center" }}
-        title={`${children}
-        ${number}`}
-      >{number}</CardHeader>
-      {/* This number below will be replaced */}
-      
+    <Card variant="outlined" sx={{ alignContent: "center", display: "flex" }}>
+      <Box sx={{ display: "flex", flex: "column", alignContent: "center" }}>
+        <CardContent sx={{ flex: "1 0 auto", alignContent: "center" }}>
+          <Typography component="div" variant="h6" sx={{ textAlign: "center" }}>
+            {children}
+          </Typography>
+          <Typography component="div" variant="h6" sx={{ textAlign: "center" }}>
+            {number}
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            color="text.secondary"
+            component="div"
+            sx={{ textAlign: "center" }}
+          >
+            {`mod`}
+          </Typography>
+          {/* <Counter /> */}
+        </CardContent>
+        {/* This number below will be replaced */}
+      </Box>
     </Card>
   );
 };

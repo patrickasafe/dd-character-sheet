@@ -1,28 +1,28 @@
 import { Grid, Stack } from "@mui/material";
 import { AbilityScoreCard } from "../AbilityScoreCard";
 import { Counter } from "../Counter";
-import { Skills } from "../Skills";
+import { StackedSkills } from "../StackedSkills";
 
 export const Body = () => {
   const staticAS = [
-    { index: "strength", name: "STRENGTH" },
-    { index: "dexterity", name: "DEXTERITY" },
-    { index: "constitution", name: "CONSTITUTION" },
-    { index: "intelligence", name: "INTELLIGENCE" },
-    { index: "wisdom", name: "WISDOM" },
-    { index: "charisma", name: "CHARISMA" },
+    { index: "strength", name: "STRENGTH", abbreviation: "STR" },
+    { index: "dexterity", name: "DEXTERITY", abbreviation: "DEX" },
+    { index: "constitution", name: "CONSTITUTION", abbreviation: "CON" },
+    { index: "intelligence", name: "INTELLIGENCE", abbreviation: "INT" },
+    { index: "wisdom", name: "WISDOM", abbreviation: "WIS" },
+    { index: "charisma", name: "CHARISMA", abbreviation: "CHA" },
   ];
 
   return (
     // full body
     <Grid container spacing={1}>
       {/* First Column */}
-      <Grid item id="ability score cards" xs={3} sm={2} md={1}>
+      <Grid item id="ability score cards" xs={6} sm={4} md={2}>
         <Stack spacing={2}>
           {staticAS.map((abilityScore) => {
             return (
               <AbilityScoreCard number={10} key={abilityScore.index}>
-                {abilityScore.name}
+                {abilityScore.abbreviation}
               </AbilityScoreCard>
             );
           })}
@@ -37,8 +37,8 @@ export const Body = () => {
       <Grid item id="passive wisdom" xs={3} sm={2} md={1}>
         <Counter label="Passive Wisdom" />
       </Grid>
-      <Grid item id="skills" xs={3} sm={2} md={1}>
-        <Skills />
+      <Grid item id="skills" xs={6} sm={4} md={2}>
+        <StackedSkills />
       </Grid>
 
       {/* Second Column */}
