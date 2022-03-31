@@ -1,5 +1,5 @@
 import { Stack } from "@mui/material";
-import { SkillPaper } from "../SkillPaper";
+import { SkillPaper } from "../Papers/SkillPaper";
 
 const skills = [
   { index: "acrobatics", title: "Acrobatics", image: "/icons/acrobatics.svg" },

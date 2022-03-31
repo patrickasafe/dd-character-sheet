@@ -1,13 +1,13 @@
 import { Paper, Box, Switch } from "@mui/material";
 import Image from "next/image";
-import { Counter } from "../Counter";
+import { Counter } from "../../Counter";
 
-interface SkillPaperProps {
+export interface BasePaperProps {
   title: string;
   image: string;
 }
 
-export const SkillPaper = ({ title, image }: SkillPaperProps) => {
+export const BasePaper = ({ title, image }: BasePaperProps) => {
   return (
     <Paper variant="outlined">
       <Box display={"flex"}>
