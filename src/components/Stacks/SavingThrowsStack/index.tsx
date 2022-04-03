@@ -1,7 +1,7 @@
+import { SavingThrowPaper } from "../../Papers/SavingThrowPaper";
 import { BaseStack } from "../BaseStack";
-import { SkillPaper } from "../../Papers/SkillPaper";
 
-const skills = [
+const SavingThrows = [
   { index: "acrobatics", title: "Acrobatics", image: "/icons/acrobatics.svg" },
   {
     index: "animal-handling",
@@ -43,12 +43,12 @@ const skills = [
 ];
 
 // This need a better name
-export const StackedSkills = () => {
+export const SavingThrowsStack = () => {
   return (
     <BaseStack>
       {skills.map((skill) => {
         return (
-          <SkillPaper
+          <SavingThrowPaper
             key={skill.index}
             title={skill.title}
             image={skill.image}
