@@ -2,6 +2,7 @@ import { Grid, Stack } from "@mui/material";
 import { AbilityScoreCard } from "../AbilityScoreCard";
 import { Counter } from "../Counter";
 import { AbilityScoreStack } from "../Stacks/AbilityScoresStack";
+import { SavingThrowsStack } from "../Stacks/SavingThrowsStack";
 import { SkillsStack } from "../Stacks/SkillsStack";
 
 export const Body = () => {
@@ -24,7 +25,9 @@ export const Body = () => {
       <Grid item id="skills" xs={6} sm={4} md={2}>
         <SkillsStack />
       </Grid>
-
+      <Grid item id="skills" xs={6} sm={4} md={2}>
+        <SavingThrowsStack />
+      </Grid>
       {/* Second Column */}
       {/* Third Column */}
     </Grid>

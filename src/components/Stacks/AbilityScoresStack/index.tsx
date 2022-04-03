@@ -12,7 +12,7 @@ const abilityScores = [
 
 export const AbilityScoreStack = () => {
   return (
-    <BaseStack>
+    <BaseStack title="ABILITY SCORES">
       {abilityScores.map((abilityScore) => {
         return (
           <AbilityScoreCard number={10} key={abilityScore.index}>

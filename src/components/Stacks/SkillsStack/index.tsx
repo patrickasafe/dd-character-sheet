@@ -45,7 +45,7 @@ const skills = [
 // This need a better name
 export const SkillsStack = () => {
   return (
-    <BaseStack>
+    <BaseStack title='SKILLS'>
       {skills.map((skill) => {
         return (
           <SkillPaper
