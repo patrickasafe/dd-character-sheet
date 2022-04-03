@@ -1,7 +1,7 @@
 import { Grid, Stack } from "@mui/material";
 import { AbilityScoreCard } from "../AbilityScoreCard";
 import { Counter } from "../Counter";
-import { StackedSkills } from "../StackedSkills";
+import { StackedSkills } from "../Stacks/StackedSkills";
 
 export const Body = () => {
   const staticAS = [

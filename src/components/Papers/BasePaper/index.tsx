@@ -10,7 +10,7 @@ export interface BasePaperProps {
 export const BasePaper = ({ title, image }: BasePaperProps) => {
   return (
     <Paper variant="outlined">
-      <Box display={"flex"}>
+      <Box display={"flex"} sx={{ alignItems: "center" }}>
         <Box height="100%" sx={{ borderRadius: "50%" }}>
           <Image src={image} alt="" width="100%" height="100%" />
         </Box>

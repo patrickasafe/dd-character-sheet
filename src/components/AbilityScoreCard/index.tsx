@@ -14,9 +14,9 @@ export const AbilityScoreCard = ({
     //This component will use map calling the instance of player context Ability Scores.
     //Ex.: {} = usecontext
     //  player.character.abilitiesScores.map()
-    <Card variant="outlined" sx={{ alignContent: "center", display: "flex" }}>
+    <Card variant="outlined" sx={{border:''}}>
       <Box sx={{ display: "flex", flex: "column", alignContent: "center" }}>
-        <CardContent sx={{ flex: "1 0 auto", alignContent: "center" }}>
+        <CardContent sx={{ flex: "auto", alignContent: "center" }}>
           <Typography component="div" variant="h6" sx={{ textAlign: "center" }}>
             {children}
           </Typography>

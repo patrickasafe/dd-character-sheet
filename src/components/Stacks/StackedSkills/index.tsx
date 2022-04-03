@@ -1,5 +1,5 @@
-import { Stack } from "@mui/material";
-import { SkillPaper } from "../Papers/SkillPaper";
+import { BaseStack } from "../BaseStack";
+import { SkillPaper } from "../../Papers/SkillPaper";
 
 const skills = [
   { index: "acrobatics", title: "Acrobatics", image: "/icons/acrobatics.svg" },
@@ -45,7 +45,7 @@ const skills = [
 // This need a better name
 export const StackedSkills = () => {
   return (
-    <Stack spacing={1}>
+    <BaseStack>
       {skills.map((skill) => {
         return (
           <SkillPaper
@@ -55,6 +55,6 @@ export const StackedSkills = () => {
           />
         );
       })}
-    </Stack>
+    </BaseStack>
   );
 };
