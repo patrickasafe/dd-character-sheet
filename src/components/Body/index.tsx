@@ -1,5 +1,6 @@
 import { Grid, Stack } from "@mui/material";
 import { AbilityScoreCard } from "../AbilityScoreCard";
+import { LanguageChips } from "../Chips/LanguagesChips";
 import { Counter } from "../Counter";
 import { AbilityScoreStack } from "../Stacks/AbilityScoresStack";
 import { SavingThrowsStack } from "../Stacks/SavingThrowsStack";
@@ -25,8 +26,11 @@ export const Body = () => {
       <Grid item id="skills" xs={6} sm={4} md={2}>
         <SkillsStack />
       </Grid>
-      <Grid item id="skills" xs={6} sm={4} md={2}>
+      <Grid item id="saving throws" xs={6} sm={4} md={2}>
         <SavingThrowsStack />
+      </Grid>
+      <Grid item id="languages" xs={3} sm={2} md={1}>
+        <LanguageChips />
       </Grid>
       {/* Second Column */}
       {/* Third Column */}
