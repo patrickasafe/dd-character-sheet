@@ -8,7 +8,7 @@ This is my personal project aiming to improve my react skill and help RPGs fans 
 
 - **[✓]** Create a generic component for "Skill" (skills must have a proficiency check ) and "Saving Throws", something like: Icon + counter + description.
 
-- Create a component for "Other Proficiencies", "Languages" and "Features & Traits". I can imagine something like a textfield that adds new itens to the character object, they act like todo cards.
+- **[PARTIALLY]** Create a component for "Other Proficiencies", "Languages" and "Features & Traits". I can imagine something like a textfield that adds new itens to the character object, they act like todo cards.
 
 - Create a component with 3 items representing "Armor Class", "Initiative" and "Speed".
 
